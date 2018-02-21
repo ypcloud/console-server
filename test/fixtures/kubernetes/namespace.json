@@ -1,0 +1,27 @@
+{
+  "kind": "Namespace",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "namespaceName",
+    "selfLink": "/api/v1/namespaces/namespaceName",
+    "uid": "1234-5678-9101112",
+    "resourceVersion": "27",
+    "creationTimestamp": "2016-07-21T19:21:00Z",
+    "labels": {
+      "project": "namespaceName-namespaceName"
+    },
+    "annotations": {
+      "drone/repo": "owner/repo",
+      "drone/commit_branch": "branch",
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"kind\":\"Namespace\",\"apiVersion\":\"v1\",\"metadata\":{\"name\":\"namespaceName\",\"creationTimestamp\":null,\"labels\":{\"project\":\"namespaceName-namespaceName\"}},\"spec\":{},\"status\":{}}"
+    }
+  },
+  "spec": {
+    "finalizers": [
+      "kubernetes"
+    ]
+  },
+  "status": {
+    "phase": "Active"
+  }
+}

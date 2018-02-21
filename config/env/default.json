@@ -1,0 +1,116 @@
+{
+  "mongo": {
+    "uri": null
+  },
+  "port": 4040,
+  // only Admins are able to see CodeKube configs
+  "admins": [],
+  "bitbucket": {
+    "signatureMethod": "RSA-SHA1",
+    "baseUrl": "https://bitbucket.org/rest/api/1.0",
+    "userProfileURL": "https://bitbucket.org/rest/api/1.0/users",
+    "userAvatarURL": "https://bitbucket.org/users/%SLUG%/avatar.png?s=50",
+    "currentUserId": "https://bitbucket.org/plugins/servlet/applinks/whoami",
+    "requestTokenURL": "https://bitbucket.org/plugins/servlet/oauth/request-token",
+    "accessTokenURL": "https://bitbucket.org/plugins/servlet/oauth/access-token",
+    "userAuthorizationURL": "https://bitbucket.org/plugins/servlet/oauth/authorize",
+    "secretKey": null
+  },
+  "consul": {
+    "baseUrl": null,
+    "port": 8500,
+    "dataCenter": "aws"
+  },
+  "drone": {
+    "baseUrl": "https://drone.io",
+    "dns": null,
+    "secure": false,
+    "deploymentsCounter": {
+      "baseUrl": null,
+      "key": null
+    }
+  },
+  // Logs
+  "elasticsearch": {
+    "baseUrl": null,
+    "amazonES": {
+      "region": "us-east-1",
+      "accessKeyId": null,
+      "secretAccessKey": null
+    },
+    "requestSize": 200
+  },
+  // API Catalog
+  "elasticSearch": {
+    "hosts": [],
+    "requestSize": 1000
+  },
+  "pubsub": {
+    "baseUrl": null,
+    "key": null,
+    "topic": "projects/PROJECT-ID/topics/TOPIC-NAME",
+    "subscription": "projects/PROJECT-ID/subscriptions/SUBSCRIPTION-NAME",
+    "projectId": "PROJECT-ID",
+    "credentials": {
+      "type": "service_account",
+      "project_id": "PROJECT-ID",
+      "private_key_id": null,
+      "private_key": null,
+      "client_email": null,
+      "client_id": null,
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://accounts.google.com/o/oauth2/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": null
+    }
+  },
+  "kong": {
+    "clusters": {
+      "aws": {
+        "baseUrl": "http://localhost:8001",
+        "token": "KONG_TOKEN_AWS"
+      },
+      "gce": {
+        "baseUrl": "http://localhost:8001",
+        "token": "KONG_TOKEN_GCE"
+      }
+    },
+    "activePlugins": "acl, basic-auth, key-auth, ldap-auth, jwt"
+  },
+  "kubernetes": {
+    "clusters": {
+      "aws": {
+        "baseUrl": null
+      },
+      "gce": {
+        "baseUrl": null
+      }
+    },
+    "maximumDeploymentScale": 5,
+    "deploymentsCountAdjustment": 4000
+  },
+  "sonar": {
+    "baseUrl": null,
+    "credentials": {
+      "username": null,
+      "password": null
+    }
+  },
+  "uptime": {
+    "baseUrl": null,
+    "key": null
+  },
+  "sitespeed": {
+    "s3": {
+      "bucket": null,
+      "key": null,
+      "secret": null
+    },
+    "k8s": {
+      "baseUrl": null,
+      "token": null,
+      "namespace": null
+    },
+    "startingDeadlineSeconds": 300
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "total": 3,
+  "data": [
+    {
+      "custom_id": "default@cloud.v1.console-server-develop.consumer.ypcgw",
+      "created_at": 1502392967000,
+      "username": "default@console-server-develop",
+      "id": "680650f3-0358-4acf-9ae9-499a42df9b8e"
+    },
+    {
+      "custom_id": "default@cloud.v1.console-develop.consumer.ypcgw",
+      "created_at": 1502392967000,
+      "username": "default@console-develop",
+      "id": "325410ca-4a61-4cde-8c1d-30ab65a3c66c"
+    },
+    {
+      "created_at": 1502392967000,
+      "username": "default@console-develop",
+      "id": "325410ca-4a61-4cde-8c1d-30ab65a3c66c"
+    },
+    {
+      "created_at": 1502395921000,
+      "username": "admin@ypcgw",
+      "id": "7fd7783e-1ee3-40a5-9afc-be85308b9604"
+    }
+  ]
+}

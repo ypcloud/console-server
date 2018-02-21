@@ -1,0 +1,65 @@
+{
+  "total": 3,
+  "data": [
+    {
+      "created_at": 1502392966000,
+      "strip_uri": true,
+      "id": "51235368-c186-4aef-ad8a-f0a44ec6e445",
+      "hosts": [
+        "dev-ypapi.codekube.io"
+      ],
+      "name": "consoleServer.cloud.v1.console-server-develop.api.ypcgw",
+      "http_if_terminated": false,
+      "https_only": false,
+      "retries": 5,
+      "uris": [
+        "/cloud/v1/consoleServer"
+      ],
+      "preserve_host": false,
+      "upstream_connect_timeout": 60000,
+      "upstream_read_timeout": 60000,
+      "upstream_send_timeout": 60000,
+      "upstream_url": "http://console-server-develop.console-server-develop.svc.cluster.local:80"
+    },
+    {
+      "created_at": 1502392967000,
+      "strip_uri": true,
+      "id": "b1433e35-5252-40a6-a4e3-c0dba95a8578",
+      "hosts": [
+        "dev-ypapi.codekube.io"
+      ],
+      "name": "console.cloud.v1.console-develop.api.ypcgw",
+      "http_if_terminated": false,
+      "https_only": false,
+      "retries": 5,
+      "uris": [
+        "/cloud/v1/console"
+      ],
+      "preserve_host": false,
+      "upstream_connect_timeout": 60000,
+      "upstream_read_timeout": 60000,
+      "upstream_send_timeout": 60000,
+      "upstream_url": "http://console-develop.console-develop.svc.cluster.local:80"
+    },
+    {
+      "created_at": 1502395402000,
+      "strip_uri": true,
+      "id": "45b3ad86-851b-4e3e-8037-e0b2f6249634",
+      "hosts": [
+        "ypcgwadmin.codekube.io"
+      ],
+      "name": "kong-admin",
+      "http_if_terminated": true,
+      "https_only": true,
+      "retries": 5,
+      "uris": [
+        "/"
+      ],
+      "preserve_host": false,
+      "upstream_connect_timeout": 60000,
+      "upstream_read_timeout": 60000,
+      "upstream_send_timeout": 60000,
+      "upstream_url": "http://kong-admin.kong.svc.cluster.local:8001"
+    }
+  ]
+}

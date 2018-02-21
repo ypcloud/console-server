@@ -1,0 +1,136 @@
+[
+  {
+    "_index": "cld-console-server-ec2-2017.11.20",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvJ",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-20T00:00:00.000Z",
+      "message": "Log one",
+      "kubernetes": {
+        "namespace_name": "console-server"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-ec2-2017.11.21",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvK",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-21T00:00:00.000Z",
+      "message": "Log two",
+      "kubernetes": {
+        "namespace_name": "console-server"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-ec2-2017.11.22",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvL",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-22T00:00:00.000Z",
+      "message": "Log three",
+      "kubernetes": {
+        "namespace_name": "console-server"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-ec2-2017.11.23",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-23T00:00:00.000Z",
+      "message": "Log four",
+      "kubernetes": {
+        "namespace_name": "console-server"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-ec2-2017.11.24",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvN",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-24T00:00:00.000Z",
+      "message": "Log five",
+      "kubernetes": {
+        "namespace_name": "console-server"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-develop-ec2-2017.11.25",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvO",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-25T00:00:00.000Z",
+      "message": "Log six",
+      "kubernetes": {
+        "namespace_name": "console-server-develop"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-develop-ec2-2017.11.26",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvP",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-26T00:00:00.000Z",
+      "message": "Log seven",
+      "kubernetes": {
+        "namespace_name": "console-server-develop"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-qa-ec2-2017.11.27",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvQ",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-27T00:00:00.000Z",
+      "message": "Log eight",
+      "kubernetes": {
+        "namespace_name": "console-server-qa"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-qa-ec2-2017.11.28",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvR",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-28T00:00:00.000Z",
+      "message_json": {
+        "description": "Log nine"
+      },
+      "kubernetes": {
+        "namespace_name": "console-server-qa"
+      }
+    }
+  },
+  {
+    "_index": "cld-console-server-qa-ec2-2017.11.29",
+    "_type": "kubernetes",
+    "_id": "AV_6ySgN430TXAJ4HmvS",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-29T00:00:00.000Z",
+      "message_json": {
+        "description": "Log ten"
+      },
+      "kubernetes": {
+        "namespace_name": "console-server-qa"
+      }
+    }
+  }
+]

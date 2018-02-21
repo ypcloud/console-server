@@ -1,0 +1,19 @@
+{
+  "IsTruncated": false,
+  "Contents": [],
+  "Name": "sitespeed-results.codekube.io",
+  "Prefix": "www.yellowpages.ca/",
+  "Delimiter": "/",
+  "MaxKeys": 1000,
+  "CommonPrefixes": [
+    {
+      "Prefix": "www.yellowpages.ca/2017-10-12-12-13-14/"
+    },
+    {
+      "Prefix": "www.yellowpages.ca/2017-10-12-13-14-15/"
+    },
+    {
+      "Prefix": "www.yellowpages.ca/2017-10-13-12-13-14/"
+    }
+  ]
+}

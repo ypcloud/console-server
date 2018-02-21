@@ -1,0 +1,17 @@
+{
+  "description": "Add Key Authentication (also referred to as an API key) to your APIs. Consumers then add their key either in a querystring parameter or a header to authenticate their requests.",
+  "fields": {
+    "key_names": {
+      "description": "Describes an array of comma separated parameter names where the plugin will look for a key. The client must send the authentication key in one of those key names, and the plugin will try to read the credential from a header or the querystring parameter with the same name. Note: the key names may only contain [a-z], [A-Z], [0-9] and [-]."
+    },
+    "key_in_body": {
+      "description": "If enabled, the plugin will read the request body (if said request has one and its MIME type is supported) and try to find the key in it. Supported MIME types are <code>application/www-form-urlencoded</code>, <code>application/json</code>, and <code>multipart/form-data</code>."
+    },
+    "hide_credentials": {
+      "description": "An optional boolean value telling the plugin to hide the credential to the upstream API server. It will be removed by API Gateway before proxying the request."
+    },
+    "anonymous": {
+      "description": "An optional string (consumer uuid) value to use as an \"anonymous\" consumer if authentication fails. If empty (default), the request will fail with an authentication failure <code>4xx</code>."
+    }
+  }
+}

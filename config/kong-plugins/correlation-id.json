@@ -1,0 +1,14 @@
+{
+  "description": "Correlate requests and responses using a unique ID transmitted over an HTTP header.",
+  "fields": {
+    "header_name": {
+      "description": "The HTTP header name to use for the correlation ID."
+    },
+    "generator": {
+      "description": "The generator to use for the correlation ID. Accepted values are <code>uuid</code>, <code>uuid#counter</code> and <code>tracker</code> See <a href=\"https://getkong.org/plugins/correlation-id/#generators\" target=\"_blank\">Generators</a>."
+    },
+    "echo_downstream": {
+      "description": "Whether to echo the header back to downstream (the client)."
+    }
+  }
+}

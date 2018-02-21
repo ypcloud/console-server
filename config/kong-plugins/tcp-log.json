@@ -1,0 +1,17 @@
+{
+  "description": "Log request and response data to a TCP server.",
+  "fields": {
+    "host": {
+      "description": "The IP address or host name to send data to."
+    },
+    "port": {
+      "description": "The port to send data to on the upstream server."
+    },
+    "timeout": {
+      "description": "An optional timeout in milliseconds when sending data to the upstream server."
+    },
+    "keepalive": {
+      "description": "An optional value in milliseconds that defines for how long an idle connection will live before being closed."
+    }
+  }
+}

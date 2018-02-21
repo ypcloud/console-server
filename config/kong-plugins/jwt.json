@@ -1,0 +1,20 @@
+{
+  "description": "Verify requests containing HS256 or RS256 signed JSON Web Tokens (as specified in RFC 7519). Each of your Consumers will have JWT credentials (public and secret keys) which must be used to sign their JWTs. A token can then be passed through the Authorization header or in the request's URI and Kong will either proxy the request to your upstream services if the token's signature is verified, or discard the request if not. Kong can also perform verifications on some of the registered claims of RFC 7519 (exp and nbf).",
+  "fields": {
+    "uri_param_names": {
+      "description": "A list of querystring parameters that API Gateway will inspect to retrieve JWTs."
+    },
+    "claims_to_verify": {
+      "description": "A list of registered claims (according to RFC 7519) that API Gateway can verify as well. Accepted values: <code>exp</code>, <code>nbf</code>."
+    },
+    "key_claim_name": {
+      "description": "The name of the claim in which the <code>key</code> identifying the secret must be passed."
+    },
+    "secret_is_base64": {
+      "description": "If true, the plugin assumes the credential's <code>secret</code> to be base64 encoded. You will need to create a base64 encoded secret for your Consumer, and sign your JWT with the original secret."
+    },
+    "anonymous": {
+      "description": "An optional string (consumer uuid) value to use as an \"anonymous\" consumer if authentication fails. If empty (default), the request will fail with an authentication failure <code>4xx</code>."
+    }
+  }
+}

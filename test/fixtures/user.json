@@ -1,0 +1,13 @@
+{
+  "username" : "markmssd",
+  "name" : "Mark Massoud",
+  "email" : "markmssd@gmail.com",
+  "avatar" : "https://git.github.com/users/markmssd/avatar.png?s=50",
+  "type" : "NORMAL",
+  "isActive" : true,
+  "createdAt" : "2017-06-06T20:19:38.338+0000",
+  "bitbucket" : {
+    "token" : "some-encrypted-token",
+    "tokenSecret" : "some-encrypted-token-secret"
+  }
+}

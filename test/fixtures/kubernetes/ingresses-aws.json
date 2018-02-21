@@ -1,0 +1,127 @@
+{
+  "kind": "IngressList",
+  "apiVersion": "extensions/v1beta1",
+  "metadata": {
+    "selfLink": "/apis/extensions/v1beta1/namespaces/namespaceName/ingresses",
+    "resourceVersion": "1234"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "ingressName",
+        "namespace": "namespaceName",
+        "selfLink": "/apis/extensions/v1beta1/namespaces/namespaceName/ingresses/ingressName",
+        "uid": "1234-5678-9101112",
+        "resourceVersion": "27",
+        "generation": 10,
+        "creationTimestamp": "2016-07-21T19:21:01Z",
+        "labels": {
+          "project": "namespaceName-namespaceName"
+        },
+        "annotations": {
+          "deployment.kubernetes.io/revision": "5",
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"kind\":\"Ingress\",\"apiVersion\":\"extensions/v1beta1\",\"metadata\":{\"name\":\"namespaceName\",\"creationTimestamp\":null,\"labels\":{\"project\":\"namespaceName-namespaceName\"}},\"spec\":{\"replicas\":1,\"template\":{\"metadata\":{\"creationTimestamp\":null,\"labels\":{\"project\":\"namespaceName-namespaceName\"}},\"spec\":{\"containers\":[{\"name\":\"namespaceName-namespaceName\",\"image\":\"docker-registry.ca/namespaceName:158\",\"ports\":[{\"name\":\"web\",\"containerPort\":4020,\"protocol\":\"TCP\"}],\"resources\":{},\"imagePullPolicy\":\"Always\"}],\"terminationGracePeriodSeconds\":10,\"dnsPolicy\":\"ClusterFirst\"}},\"strategy\":{}},\"status\":{}}"
+        }
+      },
+      "spec": {
+        "rules": [
+          {
+            "host": "namespaceName-aws.codekube.io",
+            "http": {
+              "paths": [
+                {
+                  "backend": {
+                    "serviceName": "namespaceName",
+                    "servicePort": 80
+                  },
+                  "path": "/servicePath"
+                }
+              ]
+            }
+          }
+        ],
+        "tls": [
+          {
+            "hosts": [
+              "namespaceName.codekube.io"
+            ],
+            "secretName": "ingress/codekube.io"
+          }
+        ]
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "ip": "1.2"
+            },
+            {
+              "ip": "3.4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "ingressName",
+        "namespace": "namespaceName-develop",
+        "selfLink": "/apis/extensions/v1beta1/namespaces/namespaceName-develop/ingresses/ingressName",
+        "uid": "1234-5678-9101112",
+        "resourceVersion": "27",
+        "generation": 10,
+        "creationTimestamp": "2016-07-21T19:21:01Z",
+        "labels": {
+          "project": "namespaceName-develop-namespaceName",
+          "codekube.io/service.env": "dev",
+          "codekube.io/service.name": "serviceName",
+          "codekube.io/service.group": "g1",
+          "codekube.io/service.version": "v1"
+        },
+        "annotations": {
+          "deployment.kubernetes.io/revision": "5",
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"kind\":\"Ingress\",\"apiVersion\":\"extensions/v1beta1\",\"metadata\":{\"name\":\"namespaceName-develop\",\"creationTimestamp\":null,\"labels\":{\"project\":\"namespaceName-develop-namespaceName\"}},\"spec\":{\"replicas\":1,\"template\":{\"metadata\":{\"creationTimestamp\":null,\"labels\":{\"project\":\"namespaceName-develop-namespaceName\"}},\"spec\":{\"containers\":[{\"name\":\"namespaceName-develop-namespaceName\",\"image\":\"docker-registry.ca/namespaceName-develop:158\",\"ports\":[{\"name\":\"web\",\"containerPort\":4020,\"protocol\":\"TCP\"}],\"resources\":{},\"imagePullPolicy\":\"Always\"}],\"terminationGracePeriodSeconds\":10,\"dnsPolicy\":\"ClusterFirst\"}},\"strategy\":{}},\"status\":{}}"
+        }
+      },
+      "spec": {
+        "rules": [
+          {
+            "host": "namespaceName-develop-aws.codekube.io",
+            "http": {
+              "paths": [
+                {
+                  "backend": {
+                    "serviceName": "namespaceName-develop",
+                    "servicePort": 80
+                  },
+                  "path": "/"
+                }
+              ]
+            }
+          }
+        ],
+        "tls": [
+          {
+            "hosts": [
+              "namespaceName-dev.codekube.io",
+              "namespaceName-develop.codekube.io"
+            ],
+            "secretName": "ingress/codekube.io"
+          }
+        ]
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "ip": "5.6"
+            },
+            {
+              "ip": "7.8"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

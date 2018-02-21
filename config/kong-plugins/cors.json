@@ -1,0 +1,26 @@
+{
+  "description": "Easily add Cross-origin resource sharing (CORS) to your API by enabling this plugin.",
+  "fields": {
+    "origins": {
+      "description": "A comma-separated list of allowed domains for the <code>Access-Control-Allow-Origin</code> header. If you wish to allow all origins, add <code>*</code> as a single value to this configuration field. The accepted values can either be flat strings or PCRE regexes."
+    },
+    "methods": {
+      "description": "Value for the <code>Access-Control-Allow-Methods</code> header, expects a comma delimited string (e.g. <code>GET,POST</code>)."
+    },
+    "headers": {
+      "description": "Value for the <code>Access-Control-Allow-Headers</code> header, expects a comma delimited string (e.g. <code>Origin, Authorization</code>)."
+    },
+    "exposed_headers": {
+      "description": "Value for the <code>Access-Control-Expose-Headers</code> header, expects a comma delimited string (e.g. <code>Origin, Authorization</code>). If not specified, no custom headers are exposed."
+    },
+    "credentials": {
+      "description": "Flag to determine whether the <code>Access-Control-Allow-Credentials</code> header should be sent with <code>true</code> as the value."
+    },
+    "max_age": {
+      "description": "Indicated how long the results of the preflight request can be cached, in <code>seconds</code>."
+    },
+    "preflight_continue": {
+      "description": "A boolean value that instructs the plugin to proxy the <code>OPTIONS</code> preflight request to the upstream API."
+    }
+  }
+}

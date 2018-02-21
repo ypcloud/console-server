@@ -1,0 +1,67 @@
+[
+  {
+    "name": "CLOUD/console-server",
+    "namespaces": [
+      {
+        "name": "console-server",
+        "cluster": [ "aws", "gce" ]
+      },
+      {
+        "name": "console-server-qa",
+        "cluster": [ "aws" ]
+      },
+      {
+        "name": "console-server-develop",
+        "cluster": [ "aws" ]
+      }
+    ],
+    "repository": {
+      "owner": "CLOUD",
+      "name": "console-server"
+    },
+    "isDeleted": false,
+    "createdAt": "2017-05-08T16:09:02.488Z"
+  },
+  {
+    "name": "CLOUD/console-ui",
+    "namespaces": [
+      {
+        "name": "console",
+        "clusters": [ "aws", "gce" ]
+      },
+      {
+        "name": "console-qa",
+        "clusters": [ "aws" ]
+      },
+      {
+        "name": "console-develop",
+        "clusters": [ "aws" ]
+      }
+    ],
+    "repository": {
+      "owner": "CLOUD",
+      "name": "console-ui"
+    },
+    "isDeleted": false,
+    "createdAt": "2017-05-09T16:09:02.488Z"
+  },
+  {
+    "name": "CLOUD/dashboard",
+    "namespaces": [
+      {
+        "name": "dashboard",
+        "clusters": [ "aws", "gce" ]
+      },
+      {
+        "name": "dashboard-develop",
+        "clusters": [ "aws" ]
+      }
+    ],
+    "repository": {
+      "owner": "CLOUD",
+      "name": "dashboard"
+    },
+    "isDeleted": false,
+    "createdAt": "2017-05-10T16:09:02.488Z"
+  }
+]

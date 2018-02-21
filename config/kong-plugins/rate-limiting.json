@@ -1,0 +1,50 @@
+{
+  "description": "Rate limit how many HTTP requests a developer can make in a given period of seconds, minutes, hours, days, months or years. If the API has no authentication layer, the <strong>Client IP</strong> address will be used, otherwise the Consumer will be used if an authentication plugin has been configured.",
+  "fields": {
+    "second": {
+      "description": "The amount of HTTP requests the developer can make per second. At least one limit must exist."
+    },
+    "minute": {
+      "description": "The amount of HTTP requests the developer can make per minute. At least one limit must exist."
+    },
+    "hour": {
+      "description": "The amount of HTTP requests the developer can make per hour. At least one limit must exist."
+    },
+    "day": {
+      "description": "The amount of HTTP requests the developer can make per day. At least one limit must exist."
+    },
+    "month": {
+      "description": "The amount of HTTP requests the developer can make per month. At least one limit must exist."
+    },
+    "year": {
+      "description": "The amount of HTTP requests the developer can make per year. At least one limit must exist."
+    },
+    "limit_by": {
+      "description": "The entity that will be used when aggregating the limits: <code>consumer</code>, <code>credential</code>, <code>ip</code>. If the <code>consumer</code> or the <code>credential</code> cannot be determined, the system will always fallback to <code>ip</code>."
+    },
+    "policy": {
+      "description": "The rate-limiting policies to use for retrieving and incrementing the limits. Available values are <code>local</code> (counters will be stored locally in-memory on the node), <code>cluster</code> (counters are stored in the datastore and shared across the nodes) and <code>redis</code> (counters are stored on a Redis server and will be shared across the nodes)."
+    },
+    "fault_tolerant": {
+      "description": "A boolean value that determines if the requests should be proxied even if Kong has troubles connecting a third-party datastore. If <code>true</code> requests will be proxied anyways effectively disabling the rate-limiting function until the datastore is working again. If <code>false</code> then the clients will see <code>500</code> errors."
+    },
+    "hide_client_headers": {
+      "description": "Optionally hide informative response headers."
+    },
+    "redis_host": {
+      "description": "When using the <code>redis</code> policy, this property specifies the address to the Redis server."
+    },
+    "redis_port": {
+      "description": "When using the <code>redis</code> policy, this property specifies the port of the Redis server. By default is <code>6379</code>."
+    },
+    "redis_password": {
+      "description": "When using the <code>redis</code> policy, this property specifies the password to connect to the Redis server."
+    },
+    "redis_timeout": {
+      "description": "When using the <code>redis</code> policy, this property specifies the timeout in milliseconds of any command submitted to the Redis server."
+    },
+    "redis_database": {
+      "description": "When using the <code>redis</code> policy, this property specifies Redis database to use."
+    }
+  }
+}

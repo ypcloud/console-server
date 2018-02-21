@@ -1,0 +1,20 @@
+{
+  "description": "Send request and response logs to an HTTP server.",
+  "fields": {
+    "http_endpoint": {
+      "description": "The HTTP endpoint (including the protocol to use) to which the data will be sent."
+    },
+    "method": {
+      "description": "An optional method used to send data to the http server, supported values are <code>POST</code>, <code>PUT</code>, <code>PATCH</code>."
+    },
+    "content_type": {
+      "description": "An optional content type. Accepted value is <code>application/json</code>."
+    },
+    "timeout": {
+      "description": "An optional timeout in milliseconds when sending data to the upstream server."
+    },
+    "keepalive": {
+      "description": "An optional value in milliseconds that defines for how long an idle connection will live before being closed."
+    }
+  }
+}

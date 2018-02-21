@@ -1,0 +1,71 @@
+{
+  "size": 6,
+  "limit": 1000,
+  "isLastPage": true,
+  "values": [
+    {
+      "key": "ARCHITECTURE",
+      "id": 101,
+      "name": "Architecture",
+      "description": "Projects and proof of concepts developed by the architecture team",
+      "public": false,
+      "type": "NORMAL",
+      "links": [
+        "links"
+      ]
+    },
+    {
+      "key": "BOOK",
+      "id": 1641,
+      "name": "Bookenda",
+      "public": false,
+      "type": "NORMAL",
+      "links": [
+        "links"
+      ]
+    },
+    {
+      "key": "BCM",
+      "id": 2641,
+      "name": "Build & Configuration Management",
+      "public": false,
+      "type": "NORMAL",
+      "links": [
+        "link"
+      ]
+    },
+    {
+      "key": "CANADA411-MOBILE",
+      "id": 63,
+      "name": "Canada411 Mobile",
+      "description": "Canada 411 - Android, IOS and Mobile Web projects.",
+      "public": false,
+      "type": "NORMAL",
+      "links": [
+        "links"
+      ]
+    },
+    {
+      "key": "CANPAGES-MOBILE",
+      "id": 221,
+      "name": "Canpages Mobile",
+      "description": "Canpages Mobile Web project.",
+      "public": false,
+      "type": "NORMAL",
+      "links": [
+        "link"
+      ]
+    },
+    {
+      "key": "CLOUD",
+      "id": 3801,
+      "name": "Cloud",
+      "description": "codekube.io",
+      "public": false,
+      "type": "NORMAL",
+      "links": [
+        "link"
+      ]
+    }
+  ]
+}

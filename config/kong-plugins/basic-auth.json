@@ -1,0 +1,11 @@
+{
+  "description": "Add Basic Authentication to your APIs, with username and password protection. The plugin will check for valid credentials in the <code>Proxy-Authorization</code> and <code>Authorization</code> header (in this order).",
+  "fields": {
+    "hide_credentials": {
+      "description": "An optional boolean value telling the plugin to hide the credential to the upstream API server. It will be removed by the API Gateway before proxying the request."
+    },
+    "anonymous": {
+      "description": "An optional string (consumer uuid) value to use as an \"anonymous\" consumer if authentication fails. If empty (default), the request will fail with an authentication failure <code>4xx</code>."
+    }
+  }
+}

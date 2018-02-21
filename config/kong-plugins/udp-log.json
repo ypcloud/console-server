@@ -1,0 +1,14 @@
+{
+  "description": "Log request and response data to an UDP server.",
+  "fields": {
+    "host": {
+      "description": "The IP address or host name to send data to."
+    },
+    "port": {
+      "description": "The port to send data to on the upstream server."
+    },
+    "timeout": {
+      "description": "An optional timeout in milliseconds when sending data to the upstream server."
+    }
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "uid": "1234-5678-9101112",
+    "name": "namespaceName",
+    "repo": {
+      "owner": "owner1",
+      "name": "repo1"
+    }
+  },
+  {
+    "uid": "1234-5678-9101113",
+    "name": "namespaceName-develop",
+    "repo": {
+      "owner": "owner1",
+      "name": "repo2"
+    }
+  },
+  {
+    "uid": "1234-5678-9101114",
+    "name": "namespaceName-qa",
+    "repo": {
+      "owner": "owner1",
+      "name": "repo3"
+    }
+  },
+  {
+    "uid": "1234-5678-9101115",
+    "name": "otherNamespaceName",
+    "repo": {
+      "owner": "owner2",
+      "name": "repo1"
+    }
+  },
+  {
+    "uid": "1234-5678-9101116",
+    "name": "otherNamespaceName-develop",
+    "repo": {
+      "owner": "owner2",
+      "name": "repo2"
+    }
+  },
+  {
+    "uid": "1234-5678-9101117",
+    "name": "otherNamespaceName-qa",
+    "repo": {
+      "owner": "owner2",
+      "name": "repo3"
+    }
+  }
+]

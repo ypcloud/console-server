@@ -1,0 +1,23 @@
+{
+  "kind": "ConfigMapList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/namespaces/cloudsoajs-example/configmaps",
+    "resourceVersion": "156212430"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "config-codekube-io",
+        "namespace": "cloudsoajs-example",
+        "selfLink": "/api/v1/namespaces/cloudsoajs-example/configmaps/config-codekube-io",
+        "uid": "7b2e7c2e-88fa-11e7-bc47-0e140e5a62e6",
+        "resourceVersion": "154581092",
+        "creationTimestamp": "2017-08-24T18:31:44Z"
+      },
+      "data": {
+        "config.json": "{\"provider\":{\"name\":\"codekube\",\"configSource\":\"consul\"}}"
+      }
+    }
+  ]
+}

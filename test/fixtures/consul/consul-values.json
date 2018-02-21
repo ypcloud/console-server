@@ -1,0 +1,26 @@
+[
+  {
+    "LockIndex": 0,
+    "Key": "svc/CLOUD/newKey",
+    "Flags": 0,
+    "Value": "VmFsdWUh",
+    "CreateIndex": 1201105,
+    "ModifyIndex": 1201105
+  },
+  {
+    "LockIndex": 0,
+    "Key": "svc/.SECRET_CLOUD/newKey",
+    "Flags": 0,
+    "Value": "VmFsdWUh",
+    "CreateIndex": 1201105,
+    "ModifyIndex": 1201105
+  },
+  {
+    "LockIndex": 0,
+    "Key": "svc/CLOUD/.secretNewKey",
+    "Flags": 0,
+    "Value": "VmFsdWUh",
+    "CreateIndex": 1201105,
+    "ModifyIndex": 1201105
+  }
+]

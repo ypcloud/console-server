@@ -1,0 +1,32 @@
+{
+  "description": "Log request and response data over UDP to <a href=\"https://www.loggly.com/\" target=\"_blank\">Loggly</a>.",
+  "fields": {
+    "host": {
+      "description": "The IP address or host name of Loggly server."
+    },
+    "port": {
+      "description": "The UDP port to send data to on the Loggly server."
+    },
+    "key": {
+      "description": "Loggly <a href=\"https://www.loggly.com/docs/customer-token-authentication-token\" target=\"_blank\">customer token</a>."
+    },
+    "tags": {
+      "description": "An optional list of <a href=\"https://www.loggly.com/docs/tags\" target=\"_blank\">tags</a> to support segmentation & filtering of logs."
+    },
+    "timeout": {
+      "description": "An optional timeout in milliseconds when sending data to the Loggly server."
+    },
+    "successful_severity": {
+      "description": "An optional logging severity assigned to the all successful requests with response status code 400."
+    },
+    "client_errors_severity": {
+      "description": "An optional logging severity assigned to the all failed requests with response status code 400 or higher but less than 500."
+    },
+    "server_errors_severity": {
+      "description": "An optional logging severity assigned to the all failed requests with response status code 500 or higher."
+    },
+    "log_level": {
+      "description": "An optional logging severity, any request with equal or higher severity will be logged to Loggly."
+    }
+  }
+}

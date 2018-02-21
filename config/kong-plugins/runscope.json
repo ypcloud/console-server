@@ -1,0 +1,23 @@
+{
+  "description": "Logs request and response data to <a href=\"https://www.runscope.com/?utm_source=getkong&utm_content=plugin\" target=\"_blank\">Runscope</a>. Using the Runscope Traffic Inspector, each API call can be fully viewed in it's entirety. All traffic can be searched by keyword (headers and bodies are indexed) and attribute (i.e. status code, response size, response time, etc.). Using Runscope <a href=\"https://www.runscope.com/docs/alerts\" target=\"_blank\">Live Traffic Alerts</a>, API failures and exceptions can be caught, notifying your team about problems before your customers find out. Trigger alerts based on any part of the HTTP request or response, including header values, JSON or XML data, connection details and more. Alerts can be sent to Slack, HipChat, PagerDuty, email, or webhook notifications. Live Traffic Alerts is available on all medium and larger plans.",
+  "fields": {
+    "access_token": {
+      "description": "The Runscope <a href=\"http://blog.runscope.com/posts/getting-started-with-the-runscope-api\" target=\"_blank\">access token</a> (or personal access token) for the Runscope API."
+    },
+    "bucket_key": {
+      "description": "Your Runscope <a href=\"https://www.runscope.com/docs/buckets\" target=\"_blank\">bucket</a> ID where traffic data will be stored."
+    },
+    "log_body": {
+      "description": "Whether or not the request and response bodies should be sent to Runscope."
+    },
+    "api_endpoint": {
+      "description": "URL for the Runscope API."
+    },
+    "timeout": {
+      "description": "An optional timeout in milliseconds when sending data to Runscope."
+    },
+    "keepalive": {
+      "description": "An optional value in milliseconds that defines for how long an idle connection will live before being closed."
+    }
+  }
+}

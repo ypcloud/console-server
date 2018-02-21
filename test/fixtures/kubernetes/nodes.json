@@ -1,0 +1,413 @@
+{
+  "kind": "NodeList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/nodes",
+    "resourceVersion": "109351001"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "ip-172-20-0-112.ec2.internal",
+        "selfLink": "/api/v1/nodes/ip-172-20-0-112.ec2.internal",
+        "uid": "ccb11c07-2ab7-11e7-9d9b-126f8629c640",
+        "resourceVersion": "109350954",
+        "creationTimestamp": "2017-04-26T19:37:35Z",
+        "labels": {
+          "beta.kubernetes.io/arch": "amd64",
+          "beta.kubernetes.io/instance-type": "m4.2xlarge",
+          "beta.kubernetes.io/os": "linux",
+          "failure-domain.beta.kubernetes.io/region": "us-east-1",
+          "failure-domain.beta.kubernetes.io/zone": "us-east-1d",
+          "kubernetes.io/hostname": "ip-172-20-0-112.ec2.internal"
+        },
+        "annotations": {
+          "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+        }
+      },
+      "spec": {
+        "podCIDR": "10.18.0.0/24",
+        "externalID": "i-0f576794e73759e9a",
+        "providerID": "aws:///us-east-1d/i-0f576794e73759e9a"
+      },
+      "status": {
+        "capacity": {
+          "alpha.kubernetes.io/nvidia-gpu": "0",
+          "cpu": "8",
+          "memory": "32950720Ki",
+          "pods": "110"
+        },
+        "allocatable": {
+          "alpha.kubernetes.io/nvidia-gpu": "0",
+          "cpu": "8",
+          "memory": "32950720Ki",
+          "pods": "110"
+        },
+        "conditions": [
+          {
+            "type": "OutOfDisk",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-04-26T19:37:35Z",
+            "reason": "KubeletHasSufficientDisk",
+            "message": "kubelet has sufficient disk space available"
+          },
+          {
+            "type": "MemoryPressure",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-04-26T19:37:35Z",
+            "reason": "KubeletHasSufficientMemory",
+            "message": "kubelet has sufficient memory available"
+          },
+          {
+            "type": "DiskPressure",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-04-26T19:37:35Z",
+            "reason": "KubeletHasNoDiskPressure",
+            "message": "kubelet has no disk pressure"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-04-26T19:38:06Z",
+            "reason": "KubeletReady",
+            "message": "kubelet is posting ready status"
+          },
+          {
+            "type": "NetworkUnavailable",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-05-11T20:26:12Z",
+            "reason": "RouteCreated",
+            "message": "RouteController created a route"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "InternalIP",
+            "address": "172.20.0.112"
+          },
+          {
+            "type": "LegacyHostIP",
+            "address": "172.20.0.112"
+          },
+          {
+            "type": "ExternalIP",
+            "address": "54.152.182.166"
+          }
+        ],
+        "daemonEndpoints": {
+          "kubeletEndpoint": {
+            "Port": 10250
+          }
+        },
+        "nodeInfo": {
+          "machineID": "48e8be50c47b4a26a6d199fd14e78074",
+          "systemUUID": "EC2CEB0C-9077-289E-1070-462CCB8EF3F3",
+          "bootID": "020e1720-ee98-416d-bec3-21cdfc5affc5",
+          "kernelVersion": "4.4.26-k8s",
+          "osImage": "Debian GNU/Linux 8 (jessie)",
+          "containerRuntimeVersion": "docker://1.11.2",
+          "kubeletVersion": "v1.4.7",
+          "kubeProxyVersion": "v1.4.7",
+          "operatingSystem": "linux",
+          "architecture": "amd64"
+        },
+        "images": [
+          {
+            "names": [
+              "docker.ypdev.ca/content/dasboard:3"
+            ],
+            "sizeBytes": 1438977240
+          },
+          {
+            "names": [
+              "docker.ypdev.ca/shared-services/ams:1176"
+            ],
+            "sizeBytes": 1392523268
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "name": "ip-172-20-0-126.ec2.internal",
+        "selfLink": "/api/v1/nodes/ip-172-20-0-126.ec2.internal",
+        "uid": "3cff10f0-c2e0-11e6-9201-126f8629c640",
+        "resourceVersion": "109350980",
+        "creationTimestamp": "2016-12-15T16:05:03Z",
+        "labels": {
+          "beta.kubernetes.io/arch": "amd64",
+          "beta.kubernetes.io/instance-type": "m4.xlarge",
+          "beta.kubernetes.io/os": "linux",
+          "failure-domain.beta.kubernetes.io/region": "us-east-1",
+          "failure-domain.beta.kubernetes.io/zone": "us-east-1d",
+          "kubernetes.io/hostname": "ip-172-20-0-126.ec2.internal",
+          "kubernetes.io/role": "master",
+          "codekube.io/role": "master"
+        },
+        "annotations": {
+          "scheduler.alpha.kubernetes.io/taints": "[{\"key\":\"dedicated\",\"value\":\"master\",\"effect\":\"NoSchedule\"}]",
+          "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+        }
+      },
+      "spec": {
+        "podCIDR": "10.18.7.0/24",
+        "externalID": "i-08134455c928f0980",
+        "providerID": "aws:///us-east-1d/i-08134455c928f0980",
+        "unschedulable": true
+      },
+      "status": {
+        "capacity": {
+          "alpha.kubernetes.io/nvidia-gpu": "0",
+          "cpu": "4",
+          "memory": "16435656Ki",
+          "pods": "110"
+        },
+        "allocatable": {
+          "alpha.kubernetes.io/nvidia-gpu": "0",
+          "cpu": "4",
+          "memory": "16435656Ki",
+          "pods": "110"
+        },
+        "conditions": [
+          {
+            "type": "OutOfDisk",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:14Z",
+            "lastTransitionTime": "2017-02-25T06:29:14Z",
+            "reason": "KubeletHasSufficientDisk",
+            "message": "kubelet has sufficient disk space available"
+          },
+          {
+            "type": "MemoryPressure",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:14Z",
+            "lastTransitionTime": "2016-12-15T16:05:01Z",
+            "reason": "KubeletHasSufficientMemory",
+            "message": "kubelet has sufficient memory available"
+          },
+          {
+            "type": "DiskPressure",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:14Z",
+            "lastTransitionTime": "2016-12-15T16:05:01Z",
+            "reason": "KubeletHasNoDiskPressure",
+            "message": "kubelet has no disk pressure"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastHeartbeatTime": "2017-05-11T20:26:14Z",
+            "lastTransitionTime": "2017-02-25T06:29:14Z",
+            "reason": "KubeletReady",
+            "message": "kubelet is posting ready status"
+          },
+          {
+            "type": "NetworkUnavailable",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-05-11T20:26:12Z",
+            "reason": "RouteCreated",
+            "message": "RouteController created a route"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "InternalIP",
+            "address": "172.20.0.126"
+          },
+          {
+            "type": "LegacyHostIP",
+            "address": "172.20.0.126"
+          },
+          {
+            "type": "ExternalIP",
+            "address": "54.236.226.153"
+          }
+        ],
+        "daemonEndpoints": {
+          "kubeletEndpoint": {
+            "Port": 10250
+          }
+        },
+        "nodeInfo": {
+          "machineID": "9b3d125d28934f1c93c2cd5ee2c3cbb1",
+          "systemUUID": "EC29034B-7467-DC3A-FF14-C765D32D2695",
+          "bootID": "3851cf9f-e0cf-47e1-853b-3e646cf3e864",
+          "kernelVersion": "4.4.26-k8s",
+          "osImage": "Debian GNU/Linux 8 (jessie)",
+          "containerRuntimeVersion": "docker://1.11.2",
+          "kubeletVersion": "v1.4.7",
+          "kubeProxyVersion": "v1.4.7",
+          "operatingSystem": "linux",
+          "architecture": "amd64"
+        },
+        "images": [
+          {
+            "names": [
+              "codekube/docker-logstash-kubernetes:v2"
+            ],
+            "sizeBytes": 731408248
+          },
+          {
+            "names": [
+              "codekube/docker-logstash-kubernetes:v1"
+            ],
+            "sizeBytes": 731408244
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "name": "ip-172-20-0-184.ec2.internal",
+        "selfLink": "/api/v1/nodes/ip-172-20-0-184.ec2.internal",
+        "uid": "0261e646-c3a2-11e6-9201-126f8629c640",
+        "resourceVersion": "109350998",
+        "creationTimestamp": "2016-12-16T15:12:07Z",
+        "labels": {
+          "beta.kubernetes.io/arch": "amd64",
+          "beta.kubernetes.io/instance-type": "m4.2xlarge",
+          "beta.kubernetes.io/os": "linux",
+          "failure-domain.beta.kubernetes.io/region": "us-east-1",
+          "failure-domain.beta.kubernetes.io/zone": "us-east-1d",
+          "kubernetes.io/hostname": "ip-172-20-0-184.ec2.internal",
+          "nginx-ingress-public": "true",
+          "codekube.io/role": "node"
+        },
+        "annotations": {
+          "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+        }
+      },
+      "spec": {
+        "podCIDR": "10.18.33.0/24",
+        "externalID": "i-0193dd98df2ecdd18",
+        "providerID": "aws:///us-east-1d/i-0193dd98df2ecdd18"
+      },
+      "status": {
+        "capacity": {
+          "alpha.kubernetes.io/nvidia-gpu": "0",
+          "cpu": "8",
+          "memory": "32950720Ki",
+          "pods": "110"
+        },
+        "allocatable": {
+          "alpha.kubernetes.io/nvidia-gpu": "0",
+          "cpu": "8",
+          "memory": "32950720Ki",
+          "pods": "110"
+        },
+        "conditions": [
+          {
+            "type": "OutOfDisk",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:21Z",
+            "lastTransitionTime": "2017-02-25T08:02:24Z",
+            "reason": "KubeletHasSufficientDisk",
+            "message": "kubelet has sufficient disk space available"
+          },
+          {
+            "type": "MemoryPressure",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:21Z",
+            "lastTransitionTime": "2016-12-16T15:12:07Z",
+            "reason": "KubeletHasSufficientMemory",
+            "message": "kubelet has sufficient memory available"
+          },
+          {
+            "type": "DiskPressure",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:21Z",
+            "lastTransitionTime": "2016-12-16T15:12:07Z",
+            "reason": "KubeletHasNoDiskPressure",
+            "message": "kubelet has no disk pressure"
+          },
+          {
+            "type": "Ready",
+            "status": "True",
+            "lastHeartbeatTime": "2017-05-11T20:26:21Z",
+            "lastTransitionTime": "2017-02-25T08:02:24Z",
+            "reason": "KubeletReady",
+            "message": "kubelet is posting ready status"
+          },
+          {
+            "type": "NetworkUnavailable",
+            "status": "False",
+            "lastHeartbeatTime": "2017-05-11T20:26:12Z",
+            "lastTransitionTime": "2017-05-11T20:26:12Z",
+            "reason": "RouteCreated",
+            "message": "RouteController created a route"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "InternalIP",
+            "address": "172.20.0.184"
+          },
+          {
+            "type": "LegacyHostIP",
+            "address": "172.20.0.184"
+          },
+          {
+            "type": "ExternalIP",
+            "address": "52.23.227.169"
+          }
+        ],
+        "daemonEndpoints": {
+          "kubeletEndpoint": {
+            "Port": 10250
+          }
+        },
+        "nodeInfo": {
+          "machineID": "e7b9da3fe2c94ed38411d4a9e3e5275f",
+          "systemUUID": "EC2A2F15-F041-F9E2-FA7E-045964B30740",
+          "bootID": "8cbf2c96-6550-41ed-a53b-acca012ade2d",
+          "kernelVersion": "4.4.26-k8s",
+          "osImage": "Debian GNU/Linux 8 (jessie)",
+          "containerRuntimeVersion": "docker://1.11.2",
+          "kubeletVersion": "v1.4.7",
+          "kubeProxyVersion": "v1.4.7",
+          "operatingSystem": "linux",
+          "architecture": "amd64"
+        },
+        "images": [
+          {
+            "names": [
+              "docker.ypdev.ca/dad/normalization-service:210"
+            ],
+            "sizeBytes": 1448610103
+          },
+          {
+            "names": [
+              "docker.ypdev.ca/dad/normalization-service:150"
+            ],
+            "sizeBytes": 1446810102
+          }
+        ],
+        "volumesInUse": [
+          "kubernetes.io/aws-ebs/aws://us-east-1d/vol-05872fe0fa0de62fd",
+          "kubernetes.io/aws-ebs/aws://us-east-1d/vol-673c21b5",
+          "kubernetes.io/aws-ebs/aws://us-east-1d/vol-5c948d8e"
+        ],
+        "volumesAttached": [
+          {
+            "name": "kubernetes.io/aws-ebs/aws://us-east-1d/vol-05872fe0fa0de62fd",
+            "devicePath": "/dev/xvdbd"
+          },
+          {
+            "name": "kubernetes.io/aws-ebs/aws://us-east-1d/vol-5c948d8e",
+            "devicePath": "/dev/xvdbc"
+          },
+          {
+            "name": "kubernetes.io/aws-ebs/aws://us-east-1d/vol-673c21b5",
+            "devicePath": "/dev/xvdba"
+          }
+        ]
+      }
+    }
+  ]
+}

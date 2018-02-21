@@ -1,0 +1,12 @@
+{
+  "no_consumer": true,
+  "fields": {
+    "blacklist": {
+      "type": "array"
+    },
+    "whitelist": {
+      "type": "array"
+    }
+  },
+  "self_check": "function"
+}

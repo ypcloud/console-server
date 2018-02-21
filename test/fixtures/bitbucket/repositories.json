@@ -1,0 +1,74 @@
+{
+  "size": 4,
+  "limit": 1000,
+  "isLastPage": true,
+  "values": [
+    {
+      "slug": "apidocex",
+      "id": 4223,
+      "name": "apiDocEx",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "origin": [
+        "origin"
+      ],
+      "project": [
+        "project"
+      ],
+      "public": false,
+      "links": [
+        "links"
+      ]
+    },
+    {
+      "slug": "blog",
+      "id": 3622,
+      "name": "blog",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": [
+        "project"
+      ],
+      "public": false,
+      "links": [
+        "links"
+      ]
+    },
+    {
+      "slug": "console-server",
+      "id": 5503,
+      "name": "console-server",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": [
+        "project"
+      ],
+      "public": false,
+      "links": [
+        "links"
+      ]
+    },
+    {
+      "slug": "console-ui",
+      "id": 5405,
+      "name": "console-ui",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": [
+        "project"
+      ],
+      "public": false,
+      "links": [
+        "links"
+      ]
+    }
+  ]
+}

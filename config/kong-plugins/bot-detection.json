@@ -1,0 +1,11 @@
+{
+  "description": "Protects your API from most common bots and has the capability of whitelisting and blacklisting custom clients.",
+  "fields": {
+    "whitelist": {
+      "description": "A comma separated array of regular expressions that should be whitelisted. The regular expressions will be checked against the <code>User-Agent</code> header."
+    },
+    "blacklist": {
+      "description": "A comma separated array of regular expressions that should be blacklisted. The regular expressions will be checked against the <code>User-Agent</code> header."
+    }
+  }
+}

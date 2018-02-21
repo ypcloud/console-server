@@ -1,0 +1,17 @@
+{
+  "description": "This plugin terminates incoming requests with a specified status code and message. This allows to (temporarily) block an API or Consumer.",
+  "fields": {
+    "status_code": {
+      "description": "The response code to send."
+    },
+    "message": {
+      "description": "The message to send, if using the default response generator."
+    },
+    "body": {
+      "description": "The raw response body to send, this is mutually exclusive with the <code>message</code> field."
+    },
+    "content_type": {
+      "description": "Content type of the raw response configured with <code>body</code>."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Restrict access to an API by either whitelisting or blacklisting IP addresses. Single IPs, multiple IPs or ranges in <a href=\"https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation\" target=\"_blank\">CIDR notation</a> like <code>10.10.10.0/24</code> can be used.",
+  "fields": {
+    "whitelist": {
+      "description": "Comma separated list of IPs or CIDR ranges to whitelist. One of <code>whitelist</code> or <code>blacklist</code> must be specified."
+    },
+    "blacklist": {
+      "description": "Comma separated list of IPs or CIDR ranges to blacklist. One of <code>whitelist</code> or <code>blacklist</code> must be specified."
+    }
+  }
+}

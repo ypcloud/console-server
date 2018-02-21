@@ -1,0 +1,98 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "namespaceName-1163890994-cd4be",
+    "generateName": "namespaceName-1163890994-",
+    "namespace": "namespaceName",
+    "selfLink": "/api/v1/namespaces/namespaceName/pods/podName-1163890994-cd4be",
+    "uid": "1234-5678-9101112",
+    "resourceVersion": "27",
+    "creationTimestamp": "2016-07-28T18:36:18Z",
+    "labels": {
+      "pod-template-hash": "4678645342",
+      "project": "namespaceName-namespaceName"
+    },
+    "annotations": {
+      "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"namespaceName\",\"name\":\"namespaceName-1163890994\",\"uid\":\"1234-5678-9101112\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"27\"}}\n"
+    }
+  },
+  "spec": {
+    "volumes": [
+      {
+        "name": "fake-token",
+        "secret": {
+          "secretName": "fake-token"
+        }
+      }
+    ],
+    "containers": [
+      {
+        "name": "namespaceName-namespaceName",
+        "image": "docker-registry.ca/namespaceName:158",
+        "ports": [
+          {
+            "name": "web",
+            "containerPort": 4020,
+            "protocol": "TCP"
+          }
+        ],
+        "resources": {},
+        "volumeMounts": [
+          {
+            "name": "fake-token",
+            "readOnly": true,
+            "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+          }
+        ],
+        "terminationMessagePath": "/dev/termination-log",
+        "imagePullPolicy": "Always"
+      }
+    ],
+    "restartPolicy": "Always",
+    "terminationGracePeriodSeconds": 10,
+    "dnsPolicy": "ClusterFirst",
+    "serviceAccountName": "default",
+    "serviceAccount": "default",
+    "nodeName": "codekube-node-kubs-fake.com",
+    "securityContext": {}
+  },
+  "status": {
+    "phase": "Running",
+    "conditions": [
+      {
+        "type": "Ready",
+        "status": "True",
+        "lastProbeTime": null,
+        "lastTransitionTime": "2016-08-30T13:49:01Z"
+      }
+    ],
+    "hostIP": "810.70.613",
+    "podIP": "810.70.613",
+    "startTime": "2016-07-28T18:36:18Z",
+    "containerStatuses": [
+      {
+        "name": "namespaceName-namespaceName",
+        "state": {
+          "running": {
+            "startedAt": "2016-08-30T13:49:01Z"
+          }
+        },
+        "lastState": {
+          "terminated": {
+            "exitCode": 1,
+            "reason": "Error",
+            "startedAt": "2016-08-30T12:02:16Z",
+            "finishedAt": "2016-08-30T13:48:58Z",
+            "containerID": "docker://5df4g56df6g4d65h65gf4h56fg56h46f5ghfake"
+          }
+        },
+        "ready": true,
+        "restartCount": 11,
+        "image": "docker-registry.ca/namespaceName:158",
+        "imageID": "docker://sha256:fgh45dfg4h564sh56g4564hg56dfg41h6dfghfake",
+        "containerID": "docker://f4gh4dfg56h456dg4h6d4f65gh41dfghfake"
+      }
+    ]
+  }
+}

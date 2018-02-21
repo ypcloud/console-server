@@ -1,0 +1,154 @@
+{
+  "kind": "NamespaceList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/namespaces",
+    "resourceVersion": "1234"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "namespaceName",
+        "selfLink": "/api/v1/namespaces/namespaceName",
+        "uid": "1234-5678-9101112",
+        "resourceVersion": "27",
+        "creationTimestamp": "2016-07-21T19:21:00Z",
+        "labels": {
+          "project": "namespaceName-namespaceName"
+        },
+        "annotations": {
+          "drone/repo": "owner1/repo1",
+          "drone/commit_branch": "master"
+        }
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "namespaceName-develop",
+        "selfLink": "/api/v1/namespaces/namespaceName-develop",
+        "uid": "1234-5678-9101113",
+        "resourceVersion": "27",
+        "creationTimestamp": "2016-07-21T18:57:35Z",
+        "labels": {
+          "project": "namespaceName-develop-namespaceName"
+        },
+        "annotations": {
+          "drone/repo": "owner1/repo2",
+          "drone/commit_branch": "develop"
+        }
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "namespaceName-qa",
+        "selfLink": "/api/v1/namespaces/namespaceName-qa",
+        "uid": "1234-5678-9101114",
+        "resourceVersion": "27",
+        "creationTimestamp": "2016-07-21T18:57:35Z",
+        "labels": {
+          "project": "namespaceName-qa-namespaceName"
+        },
+        "annotations": {
+          "drone/repo": "owner1/repo3",
+          "drone/commit_branch": "release"
+        }
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "otherNamespaceName",
+        "selfLink": "/api/v1/namespaces/otherNamespaceName",
+        "uid": "1234-5678-9101115",
+        "resourceVersion": "27",
+        "creationTimestamp": "2016-07-21T18:57:35Z",
+        "labels": {
+          "project": "otherNamespaceName-otherNamespaceName"
+        },
+        "annotations": {
+          "drone/repo": "owner2/repo1",
+          "drone/commit_branch": "master"
+        }
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "otherNamespaceName-develop",
+        "selfLink": "/api/v1/namespaces/otherNamespaceName-develop",
+        "uid": "1234-5678-9101116",
+        "resourceVersion": "27",
+        "creationTimestamp": "2016-07-21T18:57:35Z",
+        "labels": {
+          "project": "namespaceName-qa-namespaceName"
+        },
+        "annotations": {
+          "drone/repo": "owner2/repo2",
+          "drone/commit_branch": "develop"
+        }
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "otherNamespaceName-qa",
+        "selfLink": "/api/v1/namespaces/otherNamespaceName-qa",
+        "uid": "1234-5678-9101117",
+        "resourceVersion": "27",
+        "creationTimestamp": "2016-07-21T18:57:35Z",
+        "labels": {
+          "project": "otherNamespaceName-qa-otherNamespaceName"
+        },
+        "annotations": {
+          "drone/repo": "owner2/repo3",
+          "drone/commit_branch": "release/0.0.2"
+        }
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    }
+  ]
+}

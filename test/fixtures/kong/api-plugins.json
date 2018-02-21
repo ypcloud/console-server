@@ -1,0 +1,33 @@
+{
+  "total": 2,
+  "data": [
+    {
+      "created_at": 1507843335000,
+      "config": {
+        "key_names": [
+          "myAwesomeApiKey",
+          "key"
+        ],
+        "anonymous": "",
+        "key_in_body": false,
+        "hide_credentials": true
+      },
+      "id": "b1433e35-5252-40a6-a4e3-c0dba95a8578",
+      "enabled": true,
+      "api_id": "f3f08e68-767e-4c9a-976e-c917fea79215",
+      "name": "key-auth"
+    },
+    {
+      "created_at": 1507843335000,
+      "config": {
+        "whitelist": [
+          "default.console-server@github.qa"
+        ]
+      },
+      "id": "51235368-c186-4aef-ad8a-f0a44ec6e445",
+      "enabled": true,
+      "api_id": "f3f08e68-767e-4c9a-976e-c917fea79215",
+      "name": "acl"
+    }
+  ]
+}

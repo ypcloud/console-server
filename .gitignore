@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+.env
+.idea
+coverage
+
+# local configs
+config/env/local.json

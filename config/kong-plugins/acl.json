@@ -1,0 +1,11 @@
+{
+  "description": "Restrict access to an API by whitelisting or blacklisting consumers using arbitrary ACL group names. This plugin requires an authentication plugin (basic-auth, key-auth, etc) to have been already enabled on the API.",
+  "fields": {
+    "whitelist": {
+      "description": "Comma separated list of arbitrary group names that are allowed to consume the API. One of <code>whitelist</code> or <code>blacklist</code> must be specified."
+    },
+    "blacklist": {
+      "description": "Comma separated list of arbitrary group names that are not allowed to consume the API. One of <code>whitelist</code> or <code>blacklist</code> must be specified."
+    }
+  }
+}

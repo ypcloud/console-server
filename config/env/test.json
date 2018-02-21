@@ -1,0 +1,164 @@
+{
+  "mongo": {
+    "uri": "mongodb://localhost/codekube-development-test"
+  },
+  "port": 3000,
+  "costs": {
+    "clusters": {
+      "aws": {
+        "2017/09": 10000,
+        "2017/10": 15000
+      },
+      "gce": {
+        "2017/09": 11000,
+        "2017/10": 16000
+      },
+      "monthlyMax": 20000
+    },
+    "databases": {
+      "mongo": {
+        "2017/09": 10000,
+        "2017/10": 15000
+      },
+      "mysql": {
+        "2017/09": 10000,
+        "2017/10": 15000
+      }
+    }
+  },
+  "jwt": "JWT_SECRET",
+  "alerts": [
+    {
+      "message": "Alert 1",
+      "type": "info",
+      "isActive": true
+    },
+    {
+      "message": "Alert 2",
+      "type": "warning",
+      "isActive": false
+    }
+  ],
+  "admins": [
+    "markmssd"
+  ],
+  "bitbucket": {
+    "consumerKey": "BITBUCKET_CONSUMER_KEY",
+    "consumerSecret": "BITBUCKET_CONSUMER_SECRET",
+    "signatureMethod": "BITBUCKET_SIGNATURE_METHOD",
+    "baseUrl": "https://bitbucket.org/rest/api/1.0",
+    "userProfileURL": "https://bitbucket.org/rest/api/1.0/users",
+    "userAvatarURL": "https://bitbucket.org/users/%SLUG%/avatar.png?s=50",
+    "currentUserId": "https://bitbucket.org/plugins/servlet/applinks/whoami",
+    "requestTokenURL": "https://bitbucket.org/plugins/servlet/oauth/request-token",
+    "accessTokenURL": "https://bitbucket.org/plugins/servlet/oauth/access-token",
+    "userAuthorizationURL": "https://bitbucket.org/plugins/servlet/oauth/authorize",
+    "secretKey": "BITBUCKET_SECRET_KEY"
+  },
+  "consul": {
+    "baseUrl": "http://consulUrl.com",
+    "port": 4500,
+    "token": "CONSUL_TOKEN",
+    "dataCenter": "aws"
+  },
+  "drone": {
+    "baseUrl": "https://droneUrl.com",
+    "token": "DRONE_TOKEN",
+    "dns": "droneUrl.com",
+    "secure": false,
+    "deploymentsCounter": {
+      "baseUrl": "https://deploymentsCounter.com/counters/total",
+      "key": "DEPLOYMENTS_COUNTER_KEY"
+    }
+  },
+  "elasticsearch": {
+    "baseUrl": "http://localhost:8200",
+    "amazonES": {
+      "region": "us-east-1",
+      "accessKey": "ES_AMAZON_ACCESS_KEY",
+      "secretAccessKey": "ES_AMAZON_SECRET_ACCESS_KEY"
+    },
+    "connectionClass": "http",
+    "requestSize": 200
+  },
+  "elasticSearch": {
+    "hosts": [
+      "http://localhost:9200"
+    ],
+    "requestSize": 1000
+  },
+  "provisions": {
+    "baseUrl": "https://provisions.com",
+    "key": "PROVISIONS_KEY"
+  },
+  "pubsub": {
+    "baseUrl": "https://eventsBaseUrl.com",
+    "key": "EVENTS_KEY",
+    "topic": "PUBSUB_TOPIC",
+    "subscription": "projects/codekube-io/topics/cloud-events-test",
+    "projectId": "PUBSUB_PROJECT_ID",
+    "credentials": {
+      "type": "service_account",
+      "project_id": "PUBSUB_PROJECT_ID",
+      "private_key_id": "PUBSUB_PRIVATE_KEY_ID",
+      "private_key": "PUBSUB_PRIVATE_KEY",
+      "client_email": "PUBSUB_CLIENT_EMAIL",
+      "client_id": "PUBSUB_CLIENT_ID",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://accounts.google.com/o/oauth2/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "PUBSUB_CLIENT_X509_CERT_URL"
+    }
+  },
+  "kong": {
+    "clusters": {
+      "aws": {
+        "baseUrl": "https://kongAwsUrl.com",
+        "token": "KONG_TOKEN_AWS"
+      },
+      "gce": {
+        "baseUrl": "https://kongGceUrl.com",
+        "token": "KONG_TOKEN_GCE"
+      }
+    },
+    "activePlugins": "acl, basic-auth, key-auth, ldap-auth, jwt"
+  },
+  "kubernetes": {
+    "clusters": {
+      "aws": {
+        "baseUrl": "https://kubernetesAwsUrl.com",
+        "token": "K8S_TOKEN_AWS"
+      },
+      "gce": {
+        "baseUrl": "https://kubernetesGceUrl.com",
+        "token": "K8S_TOKEN_GCE"
+      }
+    },
+    "maximumDeploymentScale": 5,
+    "deploymentsCountAdjustment": 4000
+  },
+  "sonar": {
+    "baseUrl": "https://sonar.com",
+    "credentials": {
+      "username": "SONAR_USERNAME",
+      "password": "SONAR_PASSWORD"
+    }
+  },
+  "uptime": {
+    "baseUrl": "https://uptime.com",
+    "key": "UPTIME_KEY"
+  },
+  "sitespeed": {
+    "s3": {
+      "bucket": "SITESPEED_S3_BUCKET",
+      "key": "SITESPEED_S3_KEY",
+      "secret": "SITESPEED_S3_SECRET"
+    },
+    "k8s": {
+      "baseUrl": "https://siteSpeedK8sUrl.com",
+      "token": "SITESPEED_K8S_TOKEN",
+      "namespace": "SITESPEED_K8S_NAMESPACE"
+    },
+    "startingDeadlineSeconds": 120
+  }
+}

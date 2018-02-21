@@ -1,0 +1,17 @@
+{
+  "description": "Log request and response data to Syslog.",
+  "fields": {
+    "successful_severity": {
+      "description": "An optional logging severity assigned to the all successful requests with response status code less then 400."
+    },
+    "client_errors_severity": {
+      "description": "An optional logging severity assigned to the all failed requests with response status code 400 or higher but less than 500."
+    },
+    "server_errors_severity": {
+      "description": "An optional logging severity assigned to the all failed requests with response status code 500 or higher."
+    },
+    "log_level": {
+      "description": "An optional logging severity, any request with equal or higher severity will be logged to System log."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "_index": "existing-index",
+    "_type": "existing-type",
+    "_id": "existing-id-ypidypid-proxy-develop",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-10T16:34:19.320Z",
+      "message": "Hello Kitty"
+    }
+  },
+  {
+    "_index": "existing-index",
+    "_type": "existing-type",
+    "_id": "existing-id-orchestration-ui-develop",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-11T16:39:11.451Z",
+      "message": "Bonjour Kitty"
+    }
+  },
+  {
+    "_index": "existing-index",
+    "_type": "existing-type",
+    "_id": "existing-id-odsods-de-svc-develop",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-12T16:39:01.784Z",
+      "message": "Hola Kitty"
+    }
+  },
+  {
+    "_index": "api-catalog-qa",
+    "_type": "api-catalog",
+    "_id": "api-catalog-otherNamespaceName-qa",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2017-11-13T16:39:01.784Z",
+      "spec": "{ \"description\": \"otherNamespaceName-qa Swagger spec\" }"
+    }
+  }
+]

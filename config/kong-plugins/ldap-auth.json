@@ -1,0 +1,38 @@
+{
+  "description": "Add LDAP Bind Authentication to your APIs, with username and password protection. The plugin will check for valid credentials in the <code>Proxy-Authorization</code> and <code>Authorization</code> header (in this order).",
+  "fields": {
+    "hide_credentials": {
+      "description": "An optional boolean value telling the plugin to hide the credential to the upstream API server. It will be removed by API Gateway before proxying the request."
+    },
+    "ldap_host": {
+      "description": "Host on which the LDAP server is running."
+    },
+    "ldap_port": {
+      "description": "TCP port where the LDAP server is listening."
+    },
+    "start_tls": {
+      "description": "Set it to <code>true</code> to issue StartTLS (Transport Layer Security) extended operation over <code>ldap</code> connection."
+    },
+    "base_dn": {
+      "description": "Base DN as the starting point for the search."
+    },
+    "verify_ldap_host": {
+      "description": "Set it to <code>true</code> to authenticate LDAP server. The server certificate will be verified according to the CA certificates specified by the <code>lua_ssl_trusted_certificate</code> directive."
+    },
+    "attribute": {
+      "description": "Attribute to be used to search the user."
+    },
+    "cache_ttl": {
+      "description": "Cache expiry time in seconds."
+    },
+    "timeout": {
+      "description": "An optional timeout in milliseconds when waiting for connection with LDAP server."
+    },
+    "keepalive": {
+      "description": "An optional value in milliseconds that defines for how long an idle connection to LDAP server will live before being closed."
+    },
+    "anonymous": {
+      "description": "An optional string (consumer uuid) value to use as an \"anonymous\" consumer if authentication fails. If empty (default), the request will fail with an authentication failure <code>4xx</code>."
+    }
+  }
+}

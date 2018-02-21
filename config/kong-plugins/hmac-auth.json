@@ -1,0 +1,23 @@
+{
+  "description": "Add HMAC Signature authentication to your APIs to establish the integrity of incoming requests. The plugin will validate the digital signature sent in the <code>Proxy-Authorization</code> or <code>Authorization</code> header (in this order). This plugin implementation is based off the <a href=\"https://tools.ietf.org/html/draft-cavage-http-signatures\" target=\"_blank\">draft-cavage-http-signatures</a> draft with a slightly different signature scheme.",
+  "fields": {
+    "hide_credentials": {
+      "description": "An optional boolean value telling the plugin to hide the credential to the upstream API server. It will be removed by the API Gateway before proxying the request."
+    },
+    "anonymous": {
+      "description": "An optional string (consumer uuid) value to use as an \"anonymous\" consumer if authentication fails. If empty (default), the request will fail with an authentication failure <code>4xx</code>."
+    },
+    "clock_skew": {
+      "description": "<a href=\"https://tools.ietf.org/html/draft-cavage-http-signatures-00#section-3.4\" target=\"_blank\">Clock Skew</a> in seconds to prevent replay attacks."
+    },
+    "validate_request_body": {
+      "description": "A boolean value telling the plugin to enable body validation"
+    },
+    "enforce_headers": {
+      "description": "A list of headers which the client should at least use for HTTP signature creation"
+    },
+    "algorithms": {
+      "description": "A list of HMAC digest algorithms which the user wants to support. Allowed values are <code>hmac-sha1</code>, <code>hmac-sha256</code>, <code>hmac-sha384</code>, and <code>hmac-sha512</code>"
+    }
+  }
+}
